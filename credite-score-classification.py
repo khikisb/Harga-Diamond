@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.write(""" 
+# APLIKASI CREDIT SCORE
+Oleh Okhi Sahrul Barkah
+""")
 
 st.write("======================================================================")
 nama_nasabah = st.text_input('Masukkan Nama Nasabah')
