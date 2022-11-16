@@ -3,8 +3,8 @@ import streamlit as st
 st.write(""" 
 # APLIKASI CREDIT SCORE
 Nama : Okhi Sahrul Barkah
-NIM  : 210411100112
 """)
+st.write("NIM : 210411100112")
 
 st.write("======================================================================")
 nama_nasabah = st.text_input('Masukkan Nama Nasabah')
