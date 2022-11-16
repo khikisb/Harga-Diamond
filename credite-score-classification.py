@@ -2,7 +2,8 @@ import streamlit as st
 
 st.write(""" 
 # APLIKASI CREDIT SCORE
-Oleh Okhi Sahrul Barkah
+Nama : Okhi Sahrul Barkah
+NIM  : 210411100112
 """)
 
 st.write("======================================================================")
