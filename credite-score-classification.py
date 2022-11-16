@@ -1,7 +1,5 @@
 import streamlit as st
-import streamlit.components.v1 as com
-with open("main.css")
-com.html(f"""
+
 											<!-- my Clinic -->
 <div class="bottom_border">
 <div class="container">
@@ -195,4 +193,4 @@ com.html(f"""
 ================================================== -->
 </body>
 </html>
-""")
+
