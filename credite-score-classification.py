@@ -14,14 +14,14 @@ from sklearn.datasets import make_classification
 from sklearn.svm import SVC
 
 st.write(""" 
-# APLIKASI CREDIT BANK
+# Aplikasi Web Klasifikasi Credit Score
 Oleh Okhi Sahrul Barkah
 """)
 
 
 
 
-dataset = "https://raw.githubusercontent.com/wahyuarilsaputra/dataset/main/credit_score.csv"
+dataset = "https://gist.github.com/khikisb/7f53f136bf6dd98639fc3042af46fbdc"
 data = pd.read_csv(dataset)
 # data
 
