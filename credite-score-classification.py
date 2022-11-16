@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as com
-with open("designing.css") as source
+with open("main.css") as source
   design = source.read()
 com.html(f"""
 											<!-- my Clinic -->
