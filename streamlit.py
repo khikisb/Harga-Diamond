@@ -62,7 +62,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
     return prediction
 
 st.set_page_config(
-    page_title="Multipage App",
+    page_title="Prediksi Harga Berlian",
     page_icon="👋",
 )
 
@@ -70,9 +70,9 @@ st.title("")
 st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
 
 
-st.title('Prediksi Harga Diamond')
+st.title('Prediksi Harga Berlian')
 st.image('panduanPengisian.png')
-st.header('Masukkan Kriteria Diamond :')
+st.header('Masukkan Kriteria Berlian:')
 carat = st.number_input('Berat Karat:', min_value=0.1, max_value=10.0, value=1.0)
 cut = st.selectbox('Nilai Diamond:', ['Fair', 'Good', 'Very Good', 'Premium', 'Ideal'])
 color = st.selectbox('Nilai Warna:', ['J', 'I', 'H', 'G', 'F', 'E', 'D'])
@@ -85,5 +85,5 @@ z = st.number_input('Tinggi Berlian (Z) in mm:', min_value=0.1, max_value=100.0,
 
 if st.button('Tebak Harga Belian'):
     price = predict(carat, cut, color, clarity, depth, table, x, y, z)
-    st.success(f'Harga Diamond Tersebut adalah ${price[0]:.2f} USD')
+    st.success(f'Harga Berlian Tersebut adalah ${price[0]:.2f} USD')
 
