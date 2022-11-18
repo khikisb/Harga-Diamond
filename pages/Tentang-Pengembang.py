@@ -8,5 +8,6 @@ st.set_page_config(
 
 st.title("Tentang Pengembang")
 
-st.write("Nama saya Okhi Sahrul Barkah")
+st.image('tentang-pengembang.png')
+st.write("Nama : Okhi Sahrul Barkah")
 st.write("NIM: 210411100112")
