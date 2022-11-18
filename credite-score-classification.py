@@ -1,12 +1,3 @@
-import streamlit as st
-
-st.write(""" 
-# APLIKASI CREDIT SCORE
-Nama : Okhi Sahrul Barkah
-""")
-st.write("NIM : 210411100112")
-
-
 import xgboost as xgb
 import streamlit as st
 import pandas as pd
