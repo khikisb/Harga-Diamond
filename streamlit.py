@@ -77,4 +77,4 @@ if st.button('Tebak Harga Belian'):
     price = predict(carat, cut, color, clarity, depth, table, x, y, z)
     priceIDR = int(price) * 15.660
     st.success(f'Harga Diamond Tersebut adalah ${price[0]:.2f} USD')
-    st.success(f'Harga Diamond Tersebut adalah RP{priceIDR[0]} IDR')  
+    st.success(f'Harga Diamond Tersebut adalah RP{priceIDR} IDR')  
