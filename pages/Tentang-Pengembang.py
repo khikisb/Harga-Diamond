@@ -2,7 +2,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="Tentang Pengembang",
+    page_title="Halo Semuanya !👋",
     page_icon="👋",
 )
 
