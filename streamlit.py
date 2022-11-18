@@ -75,5 +75,6 @@ z = st.number_input('Tinggi Berlian (Z) in mm:', min_value=0.1, max_value=100.0,
 
 if st.button('Tebak Harga Belian'):
     price = predict(carat, cut, color, clarity, depth, table, x, y, z)
+    priceIDR = price * 15.660,65
     st.success(f'Harga Diamond Tersebut adalah ${price[0]:.2f} USD')
-    st.success(f'Harga Diamond Tersebut adalah RP{price[0]:.2f} IDR')  
+    st.success(f'Harga Diamond Tersebut adalah RP{priceIDR[0]:.2f} IDR')  
