@@ -62,6 +62,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
 
 
 st.title('Prediksi Harga Diamond')
+st.image('panduanPengisian.png')
 st.header('Masukkan Kriteria Diamond :')
 carat = st.number_input('Berat Karat:', min_value=0.1, max_value=10.0, value=1.0)
 cut = st.selectbox('Nilai Diamond:', ['Fair', 'Good', 'Very Good', 'Premium', 'Ideal'])
