@@ -61,6 +61,11 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
     prediction = model.predict(pd.DataFrame([[carat, cut, color, clarity, depth, table, x, y, z]], columns=['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']))
     return prediction
 
+st.set_page_config(
+    page_title="Multipage App",
+    page_icon="👋",
+)
+
 
 st.title('Prediksi Harga Diamond')
 st.image('panduanPengisian.png')
