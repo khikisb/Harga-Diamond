@@ -66,6 +66,9 @@ st.set_page_config(
     page_icon="👋",
 )
 
+st.title("Main Page")
+st.sidebar.success("Pilih Halaman Yang Ingin Anda Tuju.")
+
 
 st.title('Prediksi Harga Diamond')
 st.image('panduanPengisian.png')
