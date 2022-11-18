@@ -82,7 +82,7 @@ x = st.number_input('Panjang Berlian (X) in mm:', min_value=0.1, max_value=100.0
 y = st.number_input('Lebar Berlian (Y) in mm:', min_value=0.1, max_value=100.0, value=1.0)
 z = st.number_input('Tinggi Berlian (Z) in mm:', min_value=0.1, max_value=100.0, value=1.0)
 
-if st.button('Tebak Harga Belian'):
+if st.button('Prediksi Harga Belian'):
     price = predict(carat, cut, color, clarity, depth, table, x, y, z)
     st.success(f'Harga Berlian Tersebut adalah ${price[0]:.2f} USD')
 
