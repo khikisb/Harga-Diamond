@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Tentang Pengembang')
-st.write('Tentang Pengembang')
-st.write('Nama saya Okhi Sahrul Barkah')
-st.write('NIM: 210411100112')
+st.title("Tentang Pengembang")
+
+st.write("Nama saya Okhi Sahrul Barkah")
+st.write("NIM: 210411100112")
