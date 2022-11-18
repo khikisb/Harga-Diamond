@@ -61,8 +61,8 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
     return prediction
 
 
-st.title('Diamond Price Predictor')
-st.image("""https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTY4NjUwNDYyNTYzNDExNTkx/why-dominion-diamonds-second-trip-to-the-block-may-be-different.png""")
+st.title('Prediksi Harga Diamond')
+st.write('Oleh Okhi Sahrul Barkah')
 st.header('Enter the characteristics of the diamond:')
 carat = st.number_input('Carat Weight:', min_value=0.1, max_value=10.0, value=1.0)
 cut = st.selectbox('Cut Rating:', ['Fair', 'Good', 'Very Good', 'Premium', 'Ideal'])
