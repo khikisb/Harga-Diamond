@@ -78,11 +78,14 @@ color = st.selectbox('Nilai Warna:', ['J', 'I', 'H', 'G', 'F', 'E', 'D'])
 clarity = st.selectbox('Nilai Kejelasan Warna', ['I1', 'SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF'])
 depth = st.number_input('Persentase Kedalaman Berlian:', min_value=0.1, max_value=100.0, value=1.0)
 table = st.number_input('Persentase Tabel Berlian:', min_value=0.1, max_value=100.0, value=1.0)
-x = st.number_input('Panjang Berlian (X) in mm:', min_value=0.1, max_value=100.0, value=1.0)
-y = st.number_input('Lebar Berlian (Y) in mm:', min_value=0.1, max_value=100.0, value=1.0)
-z = st.number_input('Tinggi Berlian (Z) in mm:', min_value=0.1, max_value=100.0, value=1.0)
+x = st.number_input('Panjang Berlian (X) dalam mm:', min_value=0.1, max_value=100.0, value=1.0)
+y = st.number_input('Lebar Berlian (Y) dalam mm:', min_value=0.1, max_value=100.0, value=1.0)
+z = st.number_input('Tinggi Berlian (Z) dalam mm:', min_value=0.1, max_value=100.0, value=1.0)
 
 if st.button('Prediksi Harga Belian'):
     price = predict(carat, cut, color, clarity, depth, table, x, y, z)
+    rupiah = round(price, 2) * 15.000
     st.success(f'Harga Berlian Tersebut adalah ${price[0]:.2f} USD')
+    st.success(f'Harga Berlian Tersebut adalah ${rupiah[0]:.2f} IDR')
+    
 
