@@ -84,8 +84,7 @@ z = st.number_input('Tinggi Berlian (Z) dalam mm:', min_value=0.1, max_value=100
 
 if st.button('Prediksi Harga Belian'):
     price = predict(carat, cut, color, clarity, depth, table, x, y, z)
-    rupiah = price * 15.000
     st.success(f'Harga Berlian Tersebut adalah ${price[0]:.2f} USD')
-    st.success(f'Harga Berlian Tersebut adalah ${rupiah[0]:.2f} IDR')
+
     
 
