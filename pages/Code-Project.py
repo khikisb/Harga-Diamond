@@ -10,5 +10,5 @@ st.title("Halo Semuanya !👋")
 
 st.write('Kamu Bisa menemukan Source Code Project ini')
 
-link = '[GitHub](https://github.com/khikisb/Harga-Diamond/)'
+link = '[Di GitHub](https://github.com/khikisb/Harga-Diamond/)'
 st.markdown(link, unsafe_allow_html=True)
