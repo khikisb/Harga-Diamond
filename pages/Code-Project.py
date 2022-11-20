@@ -1,3 +1,4 @@
+from bokeh.models.widgets import Div
 import streamlit as st
 
 
@@ -10,7 +11,10 @@ st.title("Halo Semuanya !👋")
 
 st.write('Kamu Bisa menemukan Source Code Project ini')
 
-url = 'https://github.com/khikisb/Harga-Diamond/'
 
 if st.button('Di Github'):
-    webbrowser.open_new_tab(url)
+    js = "window.open('https://github.com/khikisb/Harga-Diamond/')"  # New tab or window
+    js = "window.location.href = 'https://github.com/khikisb/'"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
